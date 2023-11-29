@@ -7,24 +7,16 @@
     <title>Document</title>
 </head>
 
-<body class="dark">
+<body class="light">
     <div class="box">
         <h1>Lorem ipsum dolor sit amet.</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio non iusto autem molestiae eveniet
             doloremque, aliquid vitae incidunt minima!</p>
+        <button id="theme-toggle"
+            style="cursor: pointer; margin-top: 20px; padding-inline: 16px; padding-block: 10px; background-color: gold; font-size: 16px;">Toggle
+            Theme</button>
     </div>
 </body>
-
-<script>
-    const theme = "dark";
-
-    window.onload = function () {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = theme === "light" ? './css/style.css' : './css/style-dark.css';
-        document.head.appendChild(link)
-    }
-</script>
+<script src="./theme.js"></script>
 
 </html>
