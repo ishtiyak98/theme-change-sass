@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="dark">
+    <div class="box">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio non iusto autem molestiae eveniet
+            doloremque, aliquid vitae incidunt minima!</p>
+    </div>
+</body>
+
+<script>
+    const theme = "dark";
+
+    window.onload = function () {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = theme === "light" ? './css/style.css' : './css/style-dark.css';
+        document.head.appendChild(link)
+    }
+</script>
+
+</html>
